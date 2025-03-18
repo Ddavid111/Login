@@ -1,0 +1,28 @@
+<div class="register-container">
+  <mat-card class="auth-card">
+    <h2>Regisztráció</h2>
+    <form (submit)="register()">
+      <mat-form-field appearance="fill">
+        <mat-label>Teljes név</mat-label>
+        <input matInput type="text" [(ngModel)]="fullname" name="fullname" placeholder="Teljes név" required />
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Felhasználónév</mat-label>
+        <input matInput type="text" [(ngModel)]="username" name="username" placeholder="Felhasználónév" required />
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Email</mat-label>
+        <input matInput type="email" [(ngModel)]="email" name="email" placeholder="Email" required />
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Jelszó</mat-label>
+        <input matInput type="password" [(ngModel)]="password" name="password" placeholder="Jelszó" required />
+      </mat-form-field>
+
+      <button mat-raised-button color="accent" type="submit">Regisztráció</button>
+    </form>
+  </mat-card>
+</div>
